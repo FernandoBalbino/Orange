@@ -1,0 +1,53 @@
+:root {
+  --text: #181717;
+  --bg1: #318C2E;
+  --bg2: #F2A007;
+  --bg3: #F28705;
+  --bg4: #F2CA99;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body.hidden-scroll{
+  overflow-y: hidden;
+}
+main{
+  margin-top: 88.69px;
+}
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+  #flexDestinos{
+    align-items: flex-start;
+  }
+  #description p{
+    max-width: none;
+  }
+  .cardFlexNacionaisSec{
+    padding: 0;
+  }
+  .cruzeiroInternacinalCardLink{
+    width: 95%;
+    border-radius: 8px;
+    margin: 50px auto;
+  }
+  .secCardsCruzeiros .cruzeiroTematicoCardLink{
+    width: 95%;
+    margin: 50px auto;
+    border-radius: 8px;
+  }
+  .secCardsCruzeiros .cruzeiroInternacinalCardLink .cardFlexNacionaisSec h4{
+    font-size: 37px;
+  }
+
+}

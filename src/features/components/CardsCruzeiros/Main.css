@@ -1,0 +1,139 @@
+#flexCardsDestaquesCruzeiros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#flexCardsDestaquesCruzeiros img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#flexCardsDestaquesCruzeiros .cardDestaques{
+    width: 400px;
+    border-radius: 1rem;
+}
+#flexCardsDestaquesCruzeiros .cardDestaques h4{
+    padding: 10px 0;
+    font-family: "Roboto",fallback-font;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5715;
+    overflow-wrap: break-word;
+    letter-spacing: .1500em;
+    margin: 0;
+    text-transform: uppercase;
+}
+#flexCardsDestaquesCruzeiros .cardDestaques p{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#articleCruzeirosCardsNacionais h3{
+    font-size: 50px;
+    text-align: center;
+    margin: 70px 0 20px 0;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Aboreto', cursive;
+    text-transform: uppercase;
+}
+#articleCruzeirosCardsNacionais #infPp{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px auto;
+    text-align: center;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+.cruzeiroInternacinalCardLink{
+    background:url(./cinternacional.jpg);
+    height: 400px;
+    width: 80%;
+    margin: 100px 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.cardFlexNacionaisSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 120px;
+}
+.secCardsCruzeiros{
+    overflow: hidden;
+}
+.secCardsCruzeiros .cruzeiroInternacinalCardLink .cardFlexNacionaisSec h4{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Aboreto', cursive;
+}
+.cardFlexNacionaisSec p{
+    color: #aab0b6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+.cardFlexNacionaisSec a{
+    position: relative;
+    width: 150px;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font: inherit;
+    font-weight: 500;
+    padding: 15px 20px;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: var(--bg3);
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border: 0 solid rgba(0,0,0,0);
+    border-radius: 8px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color,background-color,color;
+    transform: translate3d(0, 0, 0);
+}
+
+.secCardsCruzeiros .cruzeiroTematicoCardLink{
+    background: url(./hospedagem.jpg);
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    margin: 100px auto 100px 20%;
+}
+.secCardsCruzeiros .cardFlexSeguranca{
+    background: url(./segurancaNavio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secCardsCruzeiros div.cardFlexTematicoSec{
+    align-items: flex-end;
+}
+.secCardsCruzeiros div.cardFlexTematicoSec p{
+    text-align: right;
+}

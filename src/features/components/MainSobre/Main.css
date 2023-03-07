@@ -1,0 +1,245 @@
+#articleAboutPage h1 span, #h2About span, #historyH2 span, .historyLinhaDoTempo span{
+    
+    text-transform: uppercase;
+    font-family: 'Aboreto', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.167;
+}
+#h2About span, #historyH2 span, .historyLinhaDoTempo span{
+    text-transform: uppercase;
+    background-image: url(/src/features/components/MainHome/icons/listrinha.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+}
+#imgSvgAbout{
+    width: 100%;
+}
+#historyH2{
+    margin-top: 30px;
+}
+#articleAboutPage{
+    height: calc(100vh - 88.69px);
+    background-image: url(./imagens/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+#articleAboutPage a{
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font: inherit;
+    font-weight: 500;
+    padding: 15px 20px;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: var(--bg3);
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border: 0 solid rgba(0,0,0,0);
+    border-radius: 8px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color,background-color,color;
+    transform: translate3d(0, 0, 0);
+}
+#articleAboutPage h1{
+    text-align: center;
+    color: white;
+    
+}
+#secHistory p, .historyP{
+    color: #474b4f;
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px 0 50px 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#secHistory{
+    margin: 100PX;
+}
+
+#articleAboutPage p{
+    color: white;
+    max-width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px auto;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    text-align: center;
+}
+#flexAboutPageSlide{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#flexCompAbout img{
+    width: 400px;
+    height: 400px;
+}
+#flexCompAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#flexCompAbout h2{
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+#flexCompAbout p{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 500px;
+    text-align: center;
+    margin: 25px auto 0 auto;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#secFrota{
+    background: url(./imagens/Frota.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+#secNossosCruzeiros{
+    background: url(../../components/MainCruzeirosNacionais/imagens/SlideNacionais.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+#flexFrota, #flexNossosCruzeiros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#flexFrota h2, #flexNossosCruzeiros h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.167;
+}
+#flexFrota p, #flexNossosCruzeiros p{
+    color: #9fa5ac;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    max-width: 600px;
+    text-align: center;
+}
+.iconHistory{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3c6b2bf;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 36px;
+}
+
+#articleAboutComp #secHistory #titleHistory1 .h3HistoryCard, #titleHistory2 h3, #titleHistory3 h3{
+    margin-bottom: 8px;
+    font-family: "Roboto",fallback-font;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5715;
+    overflow-wrap: break-word;
+    letter-spacing: .1786em;
+    text-transform: uppercase;
+}
+#articleAboutComp #secHistory .pHistoryCard p{
+    margin:10px 0 16px 0;
+    color: black;
+    font-family: "Roboto",fallback-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#secGlobal{
+    padding: 50px 0;
+    background-color: #292929;
+}
+#secGlobal h2{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    font-family: "Roboto",fallback-font;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.22;
+    letter-spacing: 1px;
+    overflow-wrap: break-word;
+}
+#secGlobal p{
+    color: white;
+    margin-bottom: 16px;
+    font-family: "Roboto",fallback-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin:0 auto 50px auto;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    max-width: 450px;
+    text-align: center;
+}
+.historyLinhaDoTempo{
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+#articleAboutComp div.divisor p.historyP{
+    text-align: center;
+    max-width: 1500px;
+}
+
+#secNossosCruzeiros{
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1000px){
+    #articleAboutPage h1 span, #h2About span, #historyH2 span, .historyLinhaDoTempo span{
+        font-size: 40px;
+    }
+    #flexFrota h2, #flexNossosCruzeiros h2 {
+        font-size: 45px;
+    }
+    #secHistory{
+        margin: 0;
+    }
+
+}

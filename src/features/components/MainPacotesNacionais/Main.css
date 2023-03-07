@@ -1,0 +1,54 @@
+#articleSlideNacionais{
+    height: calc(100vh - 88.69px);
+    background: url(./imagens/maragogi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+#flexNacionais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+#flexNacionais a{
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font: inherit;
+    font-weight: 500;
+    padding: 15px 20px;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: var(--bg3);
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border: 0 solid rgba(0,0,0,0);
+    border-radius: 8px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color,background-color,color;
+    transform: translate3d(0, 0, 0);
+}
+#flexNacionais h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Aboreto', cursive;
+    text-transform: uppercase;
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    #flexNacionais h1{
+        font-size: 50px;
+    }
+}

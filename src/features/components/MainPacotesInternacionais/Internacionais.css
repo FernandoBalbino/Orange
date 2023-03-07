@@ -1,0 +1,181 @@
+#mainPacotesInternacionais #slide{
+    height: calc(100vh - 88.69px);
+    background: url(./imagens/pacotesInternacional.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#mainPacotesInternacionais #slide #slideFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+
+#mainPacotesInternacionais #slide #slideFlex h1, #h2CaribeInf{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Aboreto', cursive;
+    text-transform: uppercase;
+}
+#mainPacotesInternacionais #slide #slideFlex #procurarInternacional, #flexCaribe a{
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font: inherit;
+    font-weight: 500;
+    padding: 15px 20px;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: var(--bg3);
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border: 0 solid rgba(0,0,0,0);
+    border-radius: 8px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color,background-color,color;
+    transform: translate3d(0, 0, 0);
+}
+#articleAboutInternacionais{
+    margin: 100px 0;
+}
+#pCaribe, #pCaribeInf{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px auto;
+    overflow-wrap: break-word;
+    max-width: 600px;
+    margin-bottom: 70px;
+    text-align: center;
+    letter-spacing: .0313em;
+}
+#mainPacotesInternacionais #h2Caribe{
+    margin: 0;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.167;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Aboreto', cursive;
+}
+#h2CaribeInf{
+    background-image: url(/src/features/components/MainHome/icons/listrinha.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: auto;
+}
+
+#flexCaribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    background: url(./imagens/caribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    text-align: center;
+}
+#flexCaribe #h3Caribe{
+    font-size: 60px;
+    color: white;
+}
+#flexCaribe p{
+    color: white;
+    font-family: "Roboto",fallback-font;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    margin-bottom: 20px;
+}
+#flexCaribe img{
+    border-radius: 8px;
+}
+#flexCaribe #divImgCaribe{
+    width: 60%;
+}
+#flexCaribe #divInfoCaribe{
+    width: 40%;
+}
+#flexCardsCarible{
+    display: flex;
+    
+    
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+#flexCardsCarible span{
+    font-family: "Roboto",fallback-font;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    overflow-wrap: break-word;
+    margin-bottom: 8px;
+    color: black;
+}
+#flexCardsCarible .cardCaribe p{
+    font-family: "Roboto",fallback-font;
+    font-size: 16px;
+    font-weight: 400;
+    color: #474b4f;
+    margin-bottom: 0;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#flexCardsCarible .cardCaribe{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-right: 20px;
+    flex-direction: column;
+    width: 330px;
+    min-height: 142px;
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px rgb(62 69 77 / 9%);
+}
+@media screen and (max-width: 700px) {
+    #mainPacotesInternacionais #slide #slideFlex h1, #h2CaribeInf{
+        font-size: 30px;
+    }
+    #h2CaribeInf{
+        background-size: contain;
+    }
+
+    #flexCaribe{
+        height: 600px;
+    }
+    #flexCaribe #divInfoCaribe{
+        width: 90%;
+    }
+    #flexCardsCarible .cardCaribe{
+        margin: 10px 0;
+    }
+}

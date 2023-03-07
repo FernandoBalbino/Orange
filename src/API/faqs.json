@@ -1,0 +1,43 @@
+[
+    {
+        "id":"1",
+        "pergunta":"O que preciso saber?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"2",
+        "pergunta":"Como faço pra comprar?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"3",
+        "pergunta":"Preparativos após embarque?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"4",
+        "pergunta":"Taxa de serviços?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"5",
+        "pergunta":"Quais as formas de pagamento?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"6",
+        "pergunta":"As atividades para crianças têm custo adicional?",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+    ,
+    {
+        "id":"7",
+        "pergunta":"Pergunta 7",
+        "resposta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor consequuntur blanditiis quod est. Delectus fuga, numquam voluptatem incidunt consequuntur odit voluptatibus quasi sit adipisci est suscipit quas explicabo iste."
+    }
+]

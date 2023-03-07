@@ -1,0 +1,385 @@
+
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99; 
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 11%);
+    background-color: rgb(255, 255, 255); 
+}
+ header .header-main ul{
+    margin: 0;
+    padding: 0;
+}
+.detailSubMenu{
+    color: var(--text);
+    
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight:700;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: .25px;
+}
+
+header .logo a{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+}
+header .logo img{
+    width: 260px;
+    height: auto;
+}
+header .nav-menu{
+    padding: 0 15px;
+}
+
+header .menu > .menu-item{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+header .menu > .menu-item > a{
+    display: block;
+    padding: 12px 0;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+header .menu > .menu-item > a:hover ~ #iconLink{
+    width: 50px;
+}
+header .menu > .menu-item > a > img.iconJava{
+    width: 12px;
+    height: 13px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    transform: rotate(0deg);
+}
+
+.header-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+header .svg-inline--fa{
+    color: var(--bg3);
+    font-size: 16px;
+    
+}
+header .menu > .menu-item > .sub-menu{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+    width: 235px;
+    position: absolute;
+    border: 1px solid #ebeff2;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+header .menu > .menu-item > a > img.iconLink{
+    width: 12px;
+    height: 13px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+header .menu > .menu-item:hover > a > img.iconLink{
+    transform: rotate(180deg);
+}
+
+
+
+@media(min-width:992px){
+    header .menu > .menu-item-has-children:hover > .sub-menu{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+header .menu > .menu-item:hover > .sub-menu{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+header .menu > .menu-item > .sub-menu > .menu-item{
+    display: block;
+}
+header .menu > .menu-item > .sub-menu > .menu-item > a{
+    display: flex;
+    gap: 10px;
+    color: var(--text);
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+header .menu > .menu-item > .sub-menu > .menu-item > a:hover{
+    background-color: #ebeff0;
+}
+header .open-nav-menu{
+    height: 34px;
+    width: 40px;
+    
+    margin-right: 15px;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header .open-nav-menu span{
+    display: block;
+    height: 3px;
+    width: 24px;
+    background-color: black;
+    position: relative;
+}
+header .open-nav-menu span::before, header .open-nav-menu span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+header .close-nav-menu{
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg3);
+    border-radius: 50%;
+    margin:0 0 15px 15px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+header .close-nav-menu img{
+    width: 16px;
+}
+header .open-nav-menu span:before{
+    top: -7px;
+}
+header .open-nav-menu span::after{
+    top: 7px;
+}
+
+header .menu-overlay{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition:  all 0.3s ease;
+}
+header .menu-overlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive */ 
+@media(max-width: 991px){
+    header .nav-menu{
+        position: fixed;
+        right: -280px;
+        width: 280px;
+        visibility: hidden;
+        height: 100%;
+        top: 0;
+        overflow-y: auto;
+        background-color: white;
+        z-index: 1000;
+        padding: 15px 0;
+        transition: all 0.5s ease;
+    }
+    .header-main{
+        justify-content: space-between;
+    }
+    #slide #captionID p{
+        font-size: 17px;
+    }
+    #articleAbout #flexAbout{
+        flex-direction: column;
+    }
+    #sectionPacotesCards #pPacotes{
+        text-align: center;
+    }
+    .card-body br{
+        display: none;
+    }
+    #imgDestinos{
+        margin: 5px 0 15px 0;
+    }
+    #footer hr{
+        margin: 30px 0;
+    }
+    #iconsFooter{
+        margin: 30px 0;
+    }
+    .divLinksFooter{
+        margin: 10px 0;
+    }
+    #sectionCards .cards{
+        margin: 10px 0;
+    }
+    #resumo{
+        height: auto;
+    }
+    #articleDestinos h2{
+        font-size: 37px;
+        text-align: center;
+    }
+    #articleAbout{
+        height: auto;
+        background:linear-gradient(135deg,#f5f8fb 70%, var(--bg2) 50%);
+    }
+    #description p{
+        text-align: center;
+    }
+    #flexAnimation{
+        flex-direction: column;
+    }
+    #articleFastServices h2{
+        font-size: 38px;
+        text-align: center;
+    }
+    #flexAbout #infoAbout h2{
+        font-size: 40px;
+    }
+    
+
+    #flexAbout div{
+        width: 100%;
+    }
+    #slide #captionID{
+        right: auto;
+    }
+    header .nav-menu.open{
+        right: 0px;
+        visibility: visible;
+        background-color: white;
+    }
+
+    header .menu > .menu-item{
+        display: block;
+        margin: 0;
+    }
+    header .menu > .menu-item:first-child > a{
+        border-top: 1px solid white;
+    }
+    header .close-nav-menu{
+        display: flex;
+    }
+
+    header .menu > .menu-item > a{
+        padding: 12px 15px;
+        color: var(--text);
+        border-bottom: 1px solid white;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    #slide #captionID h1, #articleCruzeiros h2{
+        font-size: 40px;
+    }
+
+    #Plan, #contactWhatsapp{
+        display: none;
+    }
+    #contactEmail{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    header .menu > .menu-item > .sub-menu{
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        transform: translateY(0px);
+        padding: 0px;
+        left: auto;
+        top: auto;
+        max-height: 0;
+        overflow: hidden;
+    }
+    header .menu > .menu-item > .sub-menu > .menu-item > a{
+        padding: 10px 45px;
+    color: black;
+    margin: 5px 5px;
+    border: 1px solid #333333;
+    }
+    header .open-nav-menu{
+        display: flex;
+    }
+
+}
+#contact{
+    flex-grow: 2;
+}
+#contact address{
+    margin: 0;
+}
+#contact #contactFlex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+#contact #contactFlex svg{
+    font-size: 25px;
+    transition: 0.5s all;
+}
+#contact #contactFlex svg:hover{
+    color: var(--bg1);
+}
+
+#contact button#btnContact{
+    outline: 0;
+    border: 1px solid var(--bg3);
+    padding: 10px 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    background-color: transparent;
+    transition: 0.2s all ease;
+}
+#contact button:hover{
+    color: white;
+    background-color: var(--bg1);
+    border: 1px solid transparent;
+}

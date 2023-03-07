@@ -1,0 +1,174 @@
+#sectionCardsCruzeiros .rowCard .property-content span.amount{
+    margin: 13px 13px 0 0;
+}
+#sectionCardsCruzeiros .rowCard mark{
+    background-color: red;
+}
+
+#sectionCardsCruzeiros p{
+    color: #474b4f;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#articleCruzeirosNacionais{
+    height: calc(100vh - 88.69px);
+    background: url(./imagens/SlideNacionais.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+#articleCruzeirosNacionais #flexCruzeirosNacionais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#articleCruzeirosNacionais #flexCruzeirosNacionais h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Aboreto', cursive;
+    text-transform: uppercase;
+    color: white;
+}
+#articleCruzeirosNacionais #flexCruzeirosNacionais p{
+    color: #9fa5ac;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    max-width: 600px;
+    text-align: center;
+    
+}
+#articleCruzeirosNacionais #flexCruzeirosNacionais a{
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font: inherit;
+    font-weight: 500;
+    padding: 15px 20px;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: var(--bg3);
+    text-transform: uppercase;
+    letter-spacing: .188em;
+    cursor: pointer;
+    border: 0 solid rgba(0,0,0,0);
+    border-radius: 8px;
+    outline: 0;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color,background-color,color;
+    transform: translate3d(0, 0, 0); 
+}
+#articleCruzeirosNacionaisAbout{
+    background:url(./imagens/wave.svg);
+    text-align: center;
+    padding: 100px 0;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+#articleCruzeirosNacionaisAbout h2 span{
+    text-transform: uppercase;
+    background-image: url(/src/features/components/MainHome/icons/listrinha.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    font-family: 'Aboreto', cursive;
+    margin: 0;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.167;
+   
+}
+#articleCruzeirosNacionaisAbout #infAboutNacionais p{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+}
+#articleCruzeirosNacionaisAbout p{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+#flexAboutCardsCruzeirosNacionais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+#flexAboutCardsCruzeirosNacionais .cardAboutCruzeirosNacionais{
+   margin: 50px 0;
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+}
+#articleCruzeirosNacionaisAbout #flexAboutCardsCruzeirosNacionais .titleCardNacionais h3{
+    margin: 15px 0;
+    font-family: "Roboto",fallback-font;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5715;
+    overflow-wrap: break-word;
+    letter-spacing: .1786em;
+    text-transform: uppercase;
+}
+#articleCruzeirosNacionaisAbout #flexAboutCardsCruzeirosNacionais .infCardNacionais p{
+    color: #474b4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+}
+
+@media screen and (max-width: 1000px) {
+    #flexAboutCardsCruzeirosNacionais{
+        flex-direction: column;
+    }
+    #articleCruzeirosNacionais #flexCruzeirosNacionais h1{
+        font-size: 40px;
+    }
+    #articleCruzeirosNacionaisAbout h2 span{
+        font-size: 43px;
+    }
+    #flexCardsDestaquesCruzeiros{
+        flex-direction: column;
+    }
+    #flexCardsDestaquesCruzeiros .cardDestaques{
+        width: 90%;
+    }
+    #articleCruzeirosCardsNacionais h3{
+        font-size: 40px;
+    }
+
+
+
+}

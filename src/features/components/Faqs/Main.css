@@ -1,0 +1,93 @@
+#articlePerguntasFrequentes h1{
+    padding: 60px 0 20px 0 ;
+    text-align: center;
+}
+#articlePerguntasFrequentes h1 span{
+    background-image: url(/src/features/components/MainHome/icons/listrinha.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    text-transform: uppercase;
+    font-family: 'Aboreto', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.167;
+}
+#articlePerguntasFrequentes p{
+    color: #515151;
+    max-width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 25px auto;
+    overflow-wrap: break-word;
+    letter-spacing: .0313em;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.accordion{
+    width: 70%;
+    margin: 0 auto;
+}
+.item{
+    
+    margin-bottom: 15px;
+    padding: .8em 2.2em .8em 1.2em;
+}
+.title{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.title h2{
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    
+    line-height: 1.167;
+}
+.title span{
+    font-size: 30px;
+    color: var(--bg3);
+}
+.content{
+    color: #515151;
+    max-height: 0;
+    overflow: hidden;
+    
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+@media screen and (max-width: 1000px){
+    #articlePerguntasFrequentes h1 span{
+        font-size: 40px;
+    }
+    #articlePerguntasFrequentes p{
+        max-width: 275px;
+    }
+    .accordion {
+        width: 100%;
+    }
+    .title h2 {
+        font-size: 25px;
+    }
+
+
+}
